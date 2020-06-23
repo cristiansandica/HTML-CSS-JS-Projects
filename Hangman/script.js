@@ -100,6 +100,7 @@ window.addEventListener('keydown', e => {
 
 // Restart game and play again
 playAgainBtn.addEventListener('click', () => {
+    
     // Empty the arrays
     correctLetters.splice(0);
     wrongLetters.splice(0);
