@@ -8,7 +8,7 @@ let page = 1;
 
 // Fetch from API
 async function getPost() {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`);
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/3?_limit=${limit}&_page=${page}`);
 
 
 const data = await res.json();
