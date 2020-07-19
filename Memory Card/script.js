@@ -71,7 +71,7 @@ function createCard(data, index) {
   cardsContainer.appendChild(card);
 
   updateCurrentText();
-}
+} 
 
 // Show number of cards
 function updateCurrentText() {
