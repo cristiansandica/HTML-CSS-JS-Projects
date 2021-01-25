@@ -101,6 +101,10 @@ var UIController = (function () {
             document.querySelector(element).insertAdjacentElement('beforeend', newHtml);
         },
 
+        clearFields: function () {
+           fields = document.querySelectorAll(DOMstrings.inputDescription + ', ' + DOMstrings.inputValue);
+        },
+
         getDOMstrings: function () {
             return DOMstrings; // exposing DOMstring into public
         }
@@ -134,7 +138,7 @@ var controller = (function (budgetCtrl, UICtrl) {
 
         //2 Add the item to the budget controller
         newItem = budgetCtrl.addItem(input.type, input.description, input.value);
-   
+
         //3 Add the item to the UI
         UICtrl.addListItem(newItem, input.type);
     };
